@@ -2,6 +2,8 @@
 
 namespace _THREADING_ {
     
+    int next_thread_to_work = 0;
+    
     int start() {
         
         create_thread();
@@ -17,7 +19,7 @@ namespace _THREADING_ {
     };
     int start_work(int work_to_do, int priority) {
         
-        thread[nextThreadToWork["works"]].append(work_to_do);
+        thread[next_thread_to_work["works"]].append(work_to_do);
         
     };
     
