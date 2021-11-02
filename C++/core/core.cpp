@@ -1,3 +1,5 @@
+#include "core.hpp"
+
 namespace _CORE_ {
     
     int start() {
