@@ -3,6 +3,7 @@
 namespace _THREADING_ {
     
     int next_thread_to_work = 0;
+    int thread = [{}, {}]
     
     int start() {
         
@@ -11,10 +12,9 @@ namespace _THREADING_ {
         
     };
     
-    int threads = [];
     int create_thread(int work_to_do) {
         
-        threads.append("['" +work_to_do +"']")
+        thread.append("['works': '" +work_to_do +"']")
         
     };
     int start_work(int work_to_do, int priority) {
