@@ -16,9 +16,9 @@ namespace OS {
     int _INIT_() {
         
         _CORE_.start();
-        _GUI_.start(_File_System_.userFile["name"], _File_System_.userFile["defaultBackground"], _File_System_.userFile["defaultOsTheme"]);
+        _GUI_.start(_File_System_.user_file["name"], _File_System_.user_file["defaultBackground"], _File_System_.user_file["defaultOsTheme"]);
         _THREADING_.threads.start(_Core_.workToDo);
-        _USER_.start(_File_System_.userFile["name"], _File_System_.userFile["password"], _File_System_.userFile["fingerprints"]);
+        _USER_.start(_File_System_.user_file["name"], _File_System_.user_file["password"], _File_System_.user_file["fingerprints"]);
         
     };
     
