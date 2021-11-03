@@ -1,24 +1,48 @@
+#include "../mathematics/mathematics.cpp"
 #include "threading.hpp"
 
 namespace _THREADING_ {
     
     unsigned int next_thread_to_work = 0;
-    unsigned int threads = [{}, {}]
+    unsigned int total_threads = 0;
+    unsigned int threads = [{}];
     unsigned int threads_work_loads = [];
     
     int start() {
         
-        create_thread("nothing");
-        create_thread("nothing");
+        for ((threads.length() -1) < total_threads) {
+            
+            threads.append({})
+            
+        };
+        create_thread("nloop");
+        create_thread("nloop");
         
     };
     
     int create_thread(int work_to_do) {
         
-        if (work_to_do == "nothing") {
+        if (work_to_do == "nloop") {
             
-            threads.append("['works': '" +repeat(1+1) +"']");
-            threads_work_loads.append(1);
+            if () {
+                
+                threads[(next_thread_to_work)].append("['works': '" +_MATHS_.one_add_one +"']");
+                threads_work_loads[(next_thread_to_work)].append(1) += 1;
+                if (next_thread_to_work < (total_threads -1)) {
+                    
+                    next_thread_to_work += 1;
+                    
+                } else {
+                    
+                    next_thread_to_work = 0;
+                    
+                };
+                
+            } else {
+                
+                
+                
+            };
             
         } else {
             
