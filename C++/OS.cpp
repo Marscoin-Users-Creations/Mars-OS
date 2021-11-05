@@ -17,7 +17,7 @@ namespace OS {
         
         _CORE_.start();
         _GUI_.start(_CORE_.create_starting_gif(_File_System_.user_file["name"], _File_System_.user_file["defaultBackground"], _File_System_.user_file["defaultOsTheme"]));
-        _THREADING_.threads.start(_Core_.workToDo);
+        _THREADING_.start(_Core_.work_to_do);
         _USER_.start(_File_System_.user_file["name"], _File_System_.user_file["password"], _File_System_.user_file["fingerprints"]);
         
     };
