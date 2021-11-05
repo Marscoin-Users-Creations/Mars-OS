@@ -1,3 +1,13 @@
+using string
+
+using "core/core.py"
+using "file_system/file_system.py"
+using "gui/gui.py"
+using "internet/internet.py"
+using "security/security.py"
+using "threading/threading.py"
+using "user/user.py"
+
 class OS :
     
     def _INIT_() :
